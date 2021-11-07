@@ -18,6 +18,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'rust-lang/rust.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 " nnoremap <c-p> :Files<cr>
@@ -49,7 +50,7 @@ augroup END
 set background=dark
 
 let g:dracula_colorterm = 0
-colorscheme dracula_pro
+colorscheme dracula 
 
 " colorscheme gruvbox 
 :set number relativenumber
